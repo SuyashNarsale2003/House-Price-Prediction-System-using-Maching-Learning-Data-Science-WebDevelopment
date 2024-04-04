@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <style>
+         .main{
+            position:fixed;
+            top:50px;
+            left:500px;
+            width:700px;
+            background-color:gainsboro;
+            align-items:center;
+            border-radius:5%;
+        }
+        div{
+            padding:15px;
+        }
+        input[type=submit]{
+            background-color:Black;
+            color:white;
+            cursor:pointer;
+            padding: 16px 50px;
+            border-radius: 100px;
+            font-size: 20px;
+        }
+        h1{
+            font-size:40px;
+        }
+        h2{
+            font-size:30px;
+            color:DarkRed;
+            margin-left: 100px;
+        }
+        body{
+            background-image: url("https://images.unsplash.com/photo-1483232539664-d89822fb5d3e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG8lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+            background-size: cover;
+            background-repeat:no-repeat;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+      <h1 style="text-align: center">Please Enter the following values:</h1>
+       <form action="result">
+           <div class="row">
+               <div class="col-sm-4" align="center" style="background-color:Bisque;">
+                   <p><b>Avg. Area houses Income</b></p>
+                   <input type="text" style="border-radius: 100px" name="n1">
+               </div>
+               <div class="col-sm-4" align="center" style="background-color:Bisque;">
+                   <p><b>House Age</b></p>
+                   <input type="text" style="border-radius: 100px" name="n2">
+               </div>
+               <div class="col-sm-4" align="center" style="background-color:Bisque;">
+                   <p><b>Number of Rooms</b></p>
+                   <input type="text" style="border-radius: 100px" name="n3">
+               </div>
+               <div class="col-sm-4" align="center" style="background-color:Bisque;">
+                   <p><b>Number of Bedrooms</b></p>
+                   <input type="text" style="border-radius: 100px" name="n4">
+               </div>
+               <div class="col-sm-4" align="center" style="background-color:Bisque;">
+                   <p><b>Area Population</b></p>
+                   <input type="text" style="border-radius: 100px" name="n5">
+               </div>
+           </div>
+           <div class="row" align="center">
+               <input type="submit" value="PREDICT">
+           </div>
+       </form>
+       <div class="row">
+           <h2>{{result2}}</h2>
+       </div>
+   </div>
+</body>
+</html>
